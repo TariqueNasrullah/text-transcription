@@ -1,0 +1,297 @@
+nav {
+  background-color: #111827;
+  padding: 24px 0px;
+}
+
+nav .link {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.submit-text {
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+.mt_40 {
+  margin-top: 40px;
+}
+
+.mt_24 {
+  margin-top: 24px;
+}
+
+/* Card style */
+.card {
+  background: #111827;
+  box-shadow: 0px 3px 70px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #f9fafb;
+  text-align: left;
+}
+
+.card .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #e5e7eb;
+  text-decoration: underline;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+button {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: inline-block;
+  border: none;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Recorder */
+.recorder {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 32px;
+  padding-bottom: 24px;
+}
+
+.spinner {
+  margin: 70px;
+}
+
+.submit {
+  background: #0284c7;
+  font-weight: 600;
+}
+
+.reset {
+  background: rgb(213, 54, 54);
+}
+
+.single_result {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.result h2 {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.feedback span {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.feedback {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.score span {
+  font-size: 14px;
+}
+
+.score {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.return {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 20px;
+  background: #0f172a;
+  border-radius: 5px;
+}
+
+.return svg {
+  width: 14px !important;
+}
+
+/* Disclaiemr */
+.disclaimer,
+.disclaimer-recording {
+  position: relative;
+  padding-left: 20px;
+}
+
+.disclaimer p:before,
+.disclaimer-recording p:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  border-radius: 100px;
+  background: orange;
+  display: block;
+  position: absolute;
+  left: 0%;
+}
+
+.video {
+  margin: 24px 0px;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.video button {
+  margin: 0px;
+  margin-left: 10px
+}
+
+/* Video popup */
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: #0f172a;
+  opacity: 0.95;
+}
+
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0px 12px 20px 12px;
+  }
+  .container-sm {
+    padding: 0px 12px 20px 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .link {
+    font-size: 14px !important;
+  }
+
+  .disclaimer p {
+    font-size: 12px;
+  }
+
+  .video span {
+    font-size: 14px;
+  }
+
+  .video button {
+    font-size: 12px;
+  }
+
+  /* Recording */
+
+  .recorder {
+    flex-wrap: wrap;
+  }
+
+  .player {
+    width: 100%;
+  }
+
+  .show_result {
+    width: 100%;
+  }
+
+  .disclaimer-recording {
+    width: 95% !important;
+  }
+
+  .disclaimer-recording p {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  /* Result */
+  .single_result h2 {
+    font-size: 18px;
+  }
+
+  /* Video */
+  .video {
+    padding: 10px;
+  }
+  .video-content {
+    width: 90%;
+  }
+}
